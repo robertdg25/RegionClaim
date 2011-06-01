@@ -1,0 +1,7 @@
+name: RegionClaim
+main: com.maxstnd.regionclaim.RegionClaim
+version: 0.1
+commands:
+   regionclaim:
+      description: Claim predefined WorldGuard regions.
+      usage: /regionclaim <id>
