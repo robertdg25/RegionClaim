@@ -79,8 +79,8 @@ public class RegionClaim extends JavaPlugin {
     
                 // Check whether the player has created too many regions
                     // Note: Region count of 0 is "unlimited"
-                if (wcfg.maxRegionCountPerPlayer >= 0 && mgr.getRegionCountOfPlayer(localPlayer) >= wcfg.maxRegionCountPerPlayer) {
-                    player.sendMessage(ChatColor.RED + "You own too many regions, delete one first to claim a new one.");
+                if (wcfg.maxRegionCountPerPlayer >= 1 && mgr.getRegionCountOfPlayer(localPlayer) >= wcfg.maxRegionCountPerPlayer) {
+                    player.sendMessage(ChatColor.RED + "You may only own one plot!");
                     return true;
                 }
     
